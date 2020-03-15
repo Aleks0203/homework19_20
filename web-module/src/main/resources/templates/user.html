@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Items</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+Items:
+<table>
+    <thead>
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>status</td>
+    </tr>
+    </thead>
+    <tbody th:each="item: ${items}">
+    <tr>
+        <td th:text="${item.id}">1</td>
+        <td th:text="${item.name}">name</td>
+        <td th:text="${item.statusEnum}">status</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

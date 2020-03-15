@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>homework19_20</artifactId>
+        <groupId>ru.mail.druk_aleksandr</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>ru.mail.druk_aleksandr</groupId>
+    <artifactId>service-module</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>service-module</name>
+
+    <properties>
+        <repository-module.version>1.0-SNAPSHOT</repository-module.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>ru.mail.druk_aleksandr</groupId>
+            <artifactId>repository-module</artifactId>
+            <version>${repository-module.version}</version>
+        </dependency>
+    </dependencies>
+</project>
